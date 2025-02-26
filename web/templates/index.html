@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Clickstream</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>E-commerce Clickstream</h1>
+    <form method="POST">
+        <label for="user_name">Your Name:</label>
+        <input type="text" id="user_name" name="user_name" required>
+        <br><br>
+        <label for="product">Choose a Product:</label>
+        <select id="product" name="product" required>
+            <option value="cap">Cap</option>
+            <option value="t-shirt">T-Shirt</option>
+            <option value="shoes">Shoes</option>
+            <option value="watch">Watch</option>
+            <option value="bag">Bag</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
